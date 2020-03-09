@@ -1,0 +1,77 @@
+body{
+    background-color: green;}
+ button{
+     display: inline-block; }
+     
+#card{
+    width: 64px;
+    height: 89px;
+    background-color: white;
+    padding: 3px;
+    font-weight: bolder;
+    margin: auto;
+    display: block;
+}
+#top{
+    height: 20%;
+}
+#middle{
+    height: 60%;
+    line-height: 294%;
+    text-align: center;
+}
+#bottom{
+    vertical-align: bottom;
+    text-align: right;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+.margin{
+    height: 45px;
+}
+
+/* diamond format */
+.diamond #top::before{
+    color: red;
+    content: "♦";
+}
+.diamond #bottom::after{
+    color: red;
+    content: "♦";
+}/* heart format */
+
+
+.heart #top::before{
+    color: red;
+    content: "♥";
+}
+.heart #bottom::after{
+    color: red;
+    content: "♥";
+
+
+}/* spade format */
+
+
+.spade #top::before{
+    content: "♠";
+}
+.spade #bottom::after{
+    content: "♠";
+
+
+}/* club format */
+.club #top::before{
+    content: "♣";
+}
+.club #bottom::after{
+    content: "♣";
+}
+
+h2{
+    margin: auto;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
